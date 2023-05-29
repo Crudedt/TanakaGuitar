@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>member</title>
+    <link rel="stylesheet" href="../css/member.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <a href="../html/home.html">
+          <img src="../assets/gitar-02.png" alt="" />
+        </a>
+      </div>
+      <nav>
+        <div class="nav-list">
+          <ul>
+            <li>
+              <a href="../html/home.html">home</a>
+              <a href="../html/gallery.html">gallery</a>
+              <a href="../html/aboutus.html">about us</a>
+              <a href="../html/member.html">member</a>
+              <a href="../html/contact.html">contact us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <main>
+        <form class="container-form" name="regisform" action="../html/member.html" onsubmit="return validate()">
+          <h1>Member</h1>
+          <input type="text" name="name" placeholder="Name" />
+          <input type="email" name="email" placeholder="Email" />
+          <input type="password" name="password" placeholder="Password" />
+          <select name="country" id="country">
+            <option value="NULL">Country</option>
+            <option value="Indonesia">Asia</option>
+            <option value="Singapura">Europe</option>
+            <option value="Malaysia">US</option>
+            <option value="Other">Other</option>
+          </select>
+          <div>
+            <label for="gender">Gender</label>
+          <input type="radio" name="gender" id="male" value="male" />male
+          <input type="radio" name="gender" id="female" value="female" />female
+          </div>
+          <input type="checkbox" name="sub" placeholder="tnc" />
+          <label for="">Subscribe to daily letter</label>
+          <div class="error-msg">
+            <span id="errormsg"></span>
+          </div>
+          <input type="submit" name="" value="Become Member" />
+        </form>
+      </main>
+      <div class="kosong1"></div>
+      <div class="kosong2"></div>
+      <footer>
+        <div class="logo-footer">
+          <img src="../assets/gitar-02.png" alt="" />
+        </div>
+        <div class="nav-footer">
+          <ul>
+            <li>
+              <a href="../html/home.html">home</a>
+              <a href="../html/gallery.html">gallery</a>
+              <a href="../html/aboutus.html">about us</a>
+              <a href="../html/member.html">member</a>
+              <a href="../html/contact.html">contact us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="copyright">Tanaka Guitar @ copyright 2022</div>
+      </footer>
+    </div>
+
+    <script src="../js/validate.js"></script>
+  </body>
+</html>

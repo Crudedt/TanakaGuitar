@@ -1,0 +1,246 @@
+.container {
+  display: grid;
+  height: 145vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.6fr 0.3fr 3.2fr 0.8fr;
+  grid-template-areas:
+    "logo logo logo logo"
+    "nav nav nav nav"
+    "kosongan1 main main kosongan2"
+    "footer footer footer footer";
+  grid-gap: 0.5rem;
+  overflow: hidden;
+}
+
+.logo {
+  background-color: #e4d1b9;
+  grid-area: logo;
+}
+
+.logo img {
+  width: 300px;
+  margin-left: 40%;
+  margin-right: 60%;
+  margin-top: 1%;
+}
+
+nav {
+  background-color: white;
+  grid-area: nav;
+  border-bottom: 2px solid lightsteelblue;
+}
+
+.nav-list {
+  text-align: center;
+  position: relative;
+  font-size: 24px;
+  bottom: 5px;
+}
+
+.nav-list ul {
+  text-decoration: none;
+}
+
+.nav-list li {
+  list-style: none;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #9d9d9d;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.nav-list a:hover{
+  color: black;
+}
+
+main {
+  /* background-color: aquamarine; */
+  grid-area: main;
+}
+
+.container-form {
+  width: 300px;
+  padding: 40px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #e4d1b9;
+  text-align: center;
+  border-radius: 15px;
+  border: 5px solid #8E806A;
+}
+
+.container-form h1 {
+  color: black;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.container-form input[type="text"],
+.container-form input[type="email"],
+.container-form input[type="password"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  border: 2px solid #8E806A;
+  padding: 10px 10px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 15px;
+  font-size: 16px;
+}
+
+.container-form label {
+  color: gray;
+}
+
+.container-form select {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  border: 2px solid #8E806A;
+  padding: 10px 10px;
+  width: 220px;
+  outline: none;
+  color: gray;
+  border-radius: 15px;
+  font-size: 16px;
+}
+
+.container-form input[type="radio"]{  
+  margin: 20px auto;
+  padding: 10px 10px;
+  width: 45px;
+  color: gray;
+  border-radius: 15px;
+  font-size: 16px;
+}
+
+.container-form label {
+  font-size: 14px;
+}
+
+.container-form a {
+  text-decoration: none;
+  background-color: #071327;
+  color: white;
+  font-size: 14px;
+  opacity: 70%;
+  transition: 0.25s;
+}
+
+.container-form input[type="submit"] {
+  border: 0;
+  background: none;
+  margin: 20px auto;
+  text-align: center;
+  display: block;
+  border: 2px solid #8E806A;
+  padding: 10px 10px;
+  width: 220px;
+  outline: none;
+  color: white;
+  border-radius: 15px;
+  font-size: 16px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.container-form input[type="submit"]:hover {
+  background: #8E806A;
+}
+
+.container-form a:hover {
+  color: #697d96;
+}
+
+.error-msg{
+  margin-top: 3%;
+  color: red;
+
+}
+
+.kosongan1 {
+  background-color: beige;
+  grid-area: kosongan1;
+}
+
+.kosongan2 {
+  background-color: bisque;
+  grid-area: kosongan2;
+}
+
+footer {
+  background-color: black;
+  grid-area: footer;
+  position: relative;
+}
+
+.logo-footer img {
+  width: 25px;
+  margin-left: 40%;
+  margin-top: 1%;
+  position: relative;
+}
+
+.nav-footer {
+  position: relative;
+  bottom: 15px;
+  font-size: 20px;
+}
+
+.nav-footer ul {
+  list-style: none;
+}
+
+.nav-footer li {
+  text-align: center;
+}
+
+.nav-footer a {
+  text-decoration: none;
+  color: white;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.nav-footer a:hover{
+  color: white;
+}
+
+.copyright {
+  text-align: center;
+  color: white;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    height: 150vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.4fr 0.1fr 0.2fr 3.5fr 0.1fr 0.8fr;
+    grid-template-areas:
+      "logo logo"
+      "nav nav"
+      "kosongan1 kosongan1"
+      "main main"
+      "kosongan2 kosongan2"
+      "footer footer";
+  }
+
+  .logo img {
+    width: 300px;
+    margin-left: 30%;
+    margin-top: 1%;
+  }
+
+  .logo-footer img{
+    margin-left: 35%;
+  }
+}

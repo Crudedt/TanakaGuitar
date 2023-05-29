@@ -1,0 +1,233 @@
+.container {
+  display: grid;
+  height: 120vh;
+  grid-template-columns: 0.4fr 1fr 2.2fr 0.4fr;
+  grid-template-rows: 0.6fr 0.3fr 3.2fr 0.8fr;
+  grid-template-areas:
+    "logo logo logo logo"
+    "nav nav nav nav"
+    "kosong1 main text kosong2"
+    "footer footer footer footer";
+  grid-gap: 0.5rem;
+  overflow: hidden;
+}
+
+.logo {
+  background-color: #e4d1b9;
+  grid-area: logo;
+}
+
+.logo img {
+  width: 300px;
+  margin-left: 40%;
+  margin-right: 60%;
+  margin-top: 1%;
+}
+
+nav {
+  background-color: white;
+  grid-area: nav;
+  border-bottom: 2px solid lightsteelblue;
+}
+
+.nav-list {
+  text-align: center;
+  position: relative;
+  font-size: 24px;
+  bottom: 5px;
+}
+
+.nav-list ul {
+  text-decoration: none;
+}
+
+.nav-list li {
+  list-style: none;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #9d9d9d;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.nav-list a:hover{
+  color: black;
+}
+
+main {
+  background-color: #e4d1b9;
+  grid-area: main;
+}
+
+.temp-gambar{
+  margin-top: 30%;
+}
+
+main a{
+  text-decoration: none;
+  float: left;
+}
+
+main img{
+  width: 15%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 40%;
+}
+
+main img:hover{
+  opacity: 50%;
+}
+
+.text {
+  /* background-color: brown; */
+  grid-area: text;
+}
+
+.text h1{
+  margin-left: 35%;
+  font-size: 50px;
+  margin-top: 5%;
+  
+}
+
+.container-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.container-box-inbox {
+  position: relative;
+  height: 300px;
+  width: 200px;
+  padding: 20px 35px;
+  text-align: center;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.container-box-inbox img {
+  width: 75px;
+  height: 75px;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.container-box-inbox h5 {
+  color: black;
+  font-size: 25px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.container-box-inbox p {
+  color: gray;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.kosong1 {
+  /* background-color: blue; */
+  grid-area: kosong1;
+}
+
+.kosong2 {
+  /* background-color: green; */
+  grid-area: kosong2;
+}
+
+footer {
+  background-color: black;
+  grid-area: footer;
+  position: relative;
+}
+
+.logo-footer img {
+  width: 25px;
+  margin-left: 40%;
+  margin-top: 1%;
+  position: relative;
+}
+
+.nav-footer {
+  position: relative;
+  bottom: 15px;
+  font-size: 20px;
+}
+
+.nav-footer ul {
+  list-style: none;
+}
+
+.nav-footer li {
+  text-align: center;
+}
+
+.nav-footer a {
+  text-decoration: none;
+  color: white;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.nav-footer a:hover{
+  color: white;
+}
+
+.copyright {
+  text-align: center;
+  color: white;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    height: 150vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.4fr 0.2fr 0.2fr 1.5fr 0.5fr 0.2fr 0.8fr;
+    grid-template-areas:
+      "logo logo"
+      "nav nav"
+      "kosong1 kosong1"
+      "text text"
+      "main main"
+      "kosong2 kosong2"
+      "footer footer";
+  }
+
+  .logo img {
+    width: 300px;
+    margin-left: 30%;
+    margin-top: 1%;
+  }
+
+  main{
+    display: flex;
+  }
+
+  .temp-gambar{
+    margin-top: 5%;
+  }
+
+  main a{
+    text-decoration: none;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 8%;
+  }
+  
+  main img{
+    width: 50%;
+  }
+  
+  main img:hover{
+    opacity: 50%;
+  }
+
+  .logo-footer img{
+    margin-left: 35%;
+  }
+}
